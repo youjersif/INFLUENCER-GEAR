@@ -1,6 +1,11 @@
 body {
      font-family: "Poppins", sans-serif;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .display-flex {
     display: flex;
     justify-content: center;
@@ -10,12 +15,9 @@ body {
     color: rgba(58, 58, 58, 1);
 }
 .navbar h3 {
-    width: 243px;
-    height: 53px;
    font-size: 24px;
    font-weight: 700;
    padding: 87px 494px 0 120px;
-   line-height: 36px; 
 }
 .list-item {
     flex-direction: row;
@@ -25,7 +27,7 @@ body {
     font-weight: 600;
     line-height: 24px;
     padding-top: 96px;
-    padding-left: 120px;
+    padding-right: 120px;
     
 }
 .cart {
@@ -34,7 +36,54 @@ body {
 .hamburger {
     display: none;
 }
-    
+#camera {
+ padding: 74px 133px 70px 120px;
+ gap: 133px;
+}
+#camera .prebook {
+  width: 582px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+ 
+}
+#camera .prebook h1 {
+color: rgba(58, 58, 58, 1);
+font-size: 52px;
+font-weight: 700;
+}
+#camera .prebook p {
+font-size: 16px;
+font-weight: 600;
+}
+#camera .prebook .btn {
+  width: 196px;
+  height: 44px;
+  background-color: rgba(224, 44, 109, 1);
+  color: #ffffff;
+  padding: 10px 24px 10px 24px;
+  border: none;
+  border-radius: 41px;
+  font-size: 16px;
+  font-weight: 700;
+  gap: 8px;
+
+}
+  .camera-img {
+    background: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 440px;
+    height: 414px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+  } 
+  .camera-img img {
+    width: 90%; 
+  }
 @media  screen and (max-width:576px) {
   .hamburger {
     display: block;
@@ -49,7 +98,6 @@ body {
     width: 162px;
     height: 62px;
    font-size: 16px;
-   margin: 0 auto;
    
 
 
